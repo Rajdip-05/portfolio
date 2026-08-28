@@ -1,278 +1,296 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Rajdip Sannyasi | CSE Student & Developer</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Icons -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
+    <!-- Background Noise -->
+    <div class="noise"></div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow"></div>
+
     <!-- ================= NAVBAR ================= -->
 
-    <header>
-        <nav class="navbar">
+    <header class="navbar">
 
-            <div class="logo">
-                Rajdip<span>.</span>
-            </div>
+        <a href="#home" class="logo">
+            RS<span>.</span>
+        </a>
 
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav id="nav">
 
-            <div class="menu-btn" id="menuBtn">
-                <i class="fas fa-bars"></i>
-            </div>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
 
         </nav>
+
+        <button class="menu-btn" id="menuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
     </header>
 
 
-    <!-- ================= HERO ================= -->
+    <main>
 
-    <section class="hero">
-    <div class="hero-content">
-        <h1>Hi, I'm Rajdip</h1>
-        <p>Computer Science Engineering Student</p>
-    </div>
+        <!-- ================= HERO ================= -->
 
-    <div class="hero-image">
-        <img src="portfolio.jpg" alt="Rajdip Sannyasi">
-    </div>
+        <section class="hero section" id="home">
 
-            <p class="hero-description">
-                I am passionate about programming, Data Science,
-                Machine Learning and building useful technology.
-            </p>
+            <div class="hero-copy reveal">
 
-            <div class="hero-buttons">
-
-                <a href="#projects" class="btn primary-btn">
-                    View Projects
-                </a>
-
-                <a href="#contact" class="btn secondary-btn">
-                    Contact Me
-                </a>
-
-            </div>
-
-            <div class="social-icons">
-
-                <a href="https://github.com/" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-
-                <a href="https://linkedin.com/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-                <a href="mailto:your-email@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="hero-image">
-
-            <div class="profile-circle">
-                <i class="fas fa-code"></i>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-
-    <section class="section" id="about">
-
-        <div class="section-title">
-            <p>GET TO KNOW ME</p>
-            <h2>About <span>Me</span></h2>
-        </div>
-
-        <div class="about-container">
-
-            <div class="about-image">
-                <div class="about-card">
-                    <i class="fas fa-laptop-code"></i>
-                </div>
-            </div>
-
-            <div class="about-text">
-
-                <h3>Hi, I'm Rajdip 👋</h3>
-
-                <p>
-                    I am a Computer Science Engineering student with
-                    a strong interest in software development, Data Science
-                    and Machine Learning.
+                <p class="eyebrow">
+                    <span class="dot"></span>
+                    CSE STUDENT • DEVELOPER
                 </p>
 
-                <p>
-                    Currently, I am improving my programming fundamentals,
-                    Data Structures & Algorithms and developing practical
-                    projects to strengthen my technical skills.
+                <h1>
+                    Building ideas
+                    <br>
+                    into <span>digital reality.</span>
+                </h1>
+
+                <p class="hero-text">
+
+                    Hi, I'm <strong>Rajdip Sannyasi</strong>.
+                    A Computer Science student passionate about coding,
+                    problem solving, web development and building projects
+                    that actually solve problems.
+
                 </p>
 
-                <div class="about-info">
+                <div class="hero-actions">
 
-                    <div>
-                        <strong>Education</strong>
-                        <span>BTech CSE</span>
+                    <a href="#projects" class="btn primary">
+                        View My Work
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#contact" class="btn secondary">
+                        Let's Talk
+                    </a>
+
+                </div>
+
+                <div class="socials">
+
+                    <a href="https://github.com/Rajdip-05"
+                        target="_blank">
+                        GitHub
+                    </a>
+
+                    <span>/</span>
+
+                    <a href="https://www.linkedin.com/"
+                        target="_blank">
+                        LinkedIn
+                    </a>
+
+                    <span>/</span>
+
+                    <a href="mailto:yourmail@example.com">
+                        Email
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PROFILE IMAGE -->
+
+            <div class="hero-visual reveal">
+
+                <div class="orbit orbit-one"></div>
+
+                <div class="orbit orbit-two"></div>
+
+
+                <div class="portrait-card">
+
+                    <div class="portrait-bg"></div>
+
+                    <!-- YOUR PHOTO -->
+                    <img src="myphoto.img.png"
+                        alt="Rajdip Sannyasi">
+
+                    <div class="portrait-label">
+
+                        <span>RAJDIP</span>
+
+                        <small>DEVELOPER</small>
+
                     </div>
 
-                    <div>
-                        <strong>Focus</strong>
-                        <span>Data Science & Development</span>
-                    </div>
+                </div>
+
+
+                <!-- Floating Card -->
+
+                <div class="floating-card card-top">
+
+                    <span class="mini-icon">⌘</span>
 
                     <div>
-                        <strong>Learning</strong>
-                        <span>DSA & Machine Learning</span>
+
+                        <b>Code</b>
+
+                        <small>
+                            Build • Learn • Repeat
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="floating-card card-bottom">
+
+                    <span class="mini-icon">✦</span>
+
+                    <div>
+
+                        <b>Always learning</b>
+
+                        <small>
+                            One project at a time
+                        </small>
+
                     </div>
 
                 </div>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- ================= SKILLS ================= -->
+        <!-- ================= ABOUT ================= -->
 
-    <section class="section skills-section" id="skills">
+        <section class="about section" id="about">
 
-        <div class="section-title">
-            <p>WHAT I WORK WITH</p>
-            <h2>My <span>Skills</span></h2>
-        </div>
+            <div class="section-heading reveal">
 
-        <div class="skills-container">
+                <p class="eyebrow">
+                    01 — ABOUT ME
+                </p>
 
-            <div class="skill-card">
-                <i class="fab fa-python"></i>
-                <h3>Python</h3>
-                <p>Programming & Data Science</p>
+                <h2>
+                    A little bit
+                    <span>about me.</span>
+                </h2>
+
             </div>
 
-            <div class="skill-card">
-                <i class="fas fa-code"></i>
-                <h3>C++</h3>
-                <p>Programming & DSA</p>
-            </div>
 
-            <div class="skill-card">
-                <i class="fab fa-html5"></i>
-                <h3>HTML</h3>
-                <p>Web Structure</p>
-            </div>
+            <div class="about-grid">
 
-            <div class="skill-card">
-                <i class="fab fa-css3-alt"></i>
-                <h3>CSS</h3>
-                <p>Web Design</p>
-            </div>
+                <div class="about-text reveal">
 
-            <div class="skill-card">
-                <i class="fab fa-js"></i>
-                <h3>JavaScript</h3>
-                <p>Web Interactivity</p>
-            </div>
+                    <p class="lead">
 
-            <div class="skill-card">
-                <i class="fas fa-database"></i>
-                <h3>SQL</h3>
-                <p>Database Management</p>
-            </div>
+                        I'm currently pursuing B.Tech in Computer
+                        Science & Engineering and working on becoming
+                        a stronger developer every day.
 
-            <div class="skill-card">
-                <i class="fas fa-brain"></i>
-                <h3>Machine Learning</h3>
-                <p>Predictive Models</p>
-            </div>
-
-            <div class="skill-card">
-                <i class="fab fa-git-alt"></i>
-                <h3>Git & GitHub</h3>
-                <p>Version Control</p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= PROJECTS ================= -->
-
-    <section class="section" id="projects">
-
-        <div class="section-title">
-            <p>MY WORK</p>
-            <h2>Featured <span>Projects</span></h2>
-        </div>
-
-        <div class="projects-container">
-
-            <!-- PROJECT 1 -->
-
-            <div class="project-card">
-
-                <div class="project-icon">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-
-                <div class="project-content">
-
-                    <h3>Purchase Intent Predictor</h3>
-
-                    <p>
-                        A Machine Learning project that predicts whether
-                        a customer is likely to make a purchase based
-                        on their behavioral data.
                     </p>
 
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>ML</span>
-                        <span>Pandas</span>
-                        <span>Scikit-learn</span>
+                    <p>
+
+                        I enjoy learning how software works,
+                        turning concepts into practical projects,
+                        and improving my programming fundamentals.
+
+                        My current focus is on DSA, programming,
+                        web development and creating projects for
+                        my GitHub portfolio.
+
+                    </p>
+
+                    <p>
+
+                        I believe the best way to learn technology
+                        is to build with it — experiment, make
+                        mistakes, fix them and keep going.
+
+                    </p>
+
+                </div>
+
+
+                <div class="about-stats reveal">
+
+                    <div class="stat">
+
+                        <strong>01</strong>
+
+                        <span>
+                            Curious
+                            <br>
+                            Mindset
+                        </span>
+
                     </div>
 
-                    <div class="project-links">
 
-                        <a href="#" target="_blank">
-                            <i class="fab fa-github"></i>
-                            GitHub
-                        </a>
+                    <div class="stat">
 
-                        <a href="#" target="_blank">
-                            Live Demo
-                            <i class="fas fa-arrow-up-right-from-square"></i>
-                        </a>
+                        <strong>02</strong>
+
+                        <span>
+                            Project
+                            <br>
+                            Driven
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <strong>03</strong>
+
+                        <span>
+                            Continuous
+                            <br>
+                            Learning
+                        </span>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <strong>04</strong>
+
+                        <span>
+                            Problem
+                            <br>
+                            Solver
+                        </span>
 
                     </div>
 
@@ -280,300 +298,511 @@
 
             </div>
 
+        </section>
 
-            <!-- PROJECT 2 -->
 
-            <div class="project-card">
+        <!-- ================= SKILLS ================= -->
 
-                <div class="project-icon">
-                    <i class="fas fa-user-graduate"></i>
-                </div>
+        <section class="skills section" id="skills">
 
-                <div class="project-content">
+            <div class="section-heading reveal">
 
-                    <h3>Student Dropout Prediction</h3>
+                <p class="eyebrow">
+                    02 — SKILLS
+                </p>
+
+                <h2>
+                    Tools I
+                    <span>work with.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="skills-grid reveal">
+
+                <div class="skill-card">
+
+                    <div class="skill-number">
+                        01
+                    </div>
+
+                    <h3>
+                        C / C++
+                    </h3>
 
                     <p>
-                        A Machine Learning application designed to
+                        Programming fundamentals
+                        & problem solving
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Python
+                    </h3>
+
+                    <p>
+                        Programming, automation
+                        & data projects
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-number">
+                        03
+                    </div>
+
+                    <h3>
+                        HTML / CSS
+                    </h3>
+
+                    <p>
+                        Responsive and modern
+                        web interfaces
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-number">
+                        04
+                    </div>
+
+                    <h3>
+                        JavaScript
+                    </h3>
+
+                    <p>
+                        Interactive front-end
+                        experiences
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-number">
+                        05
+                    </div>
+
+                    <h3>
+                        DSA
+                    </h3>
+
+                    <p>
+                        Algorithms, data structures
+                        & logical thinking
+                    </p>
+
+                </div>
+
+
+                <div class="skill-card">
+
+                    <div class="skill-number">
+                        06
+                    </div>
+
+                    <h3>
+                        Git & GitHub
+                    </h3>
+
+                    <p>
+                        Version control and
+                        project collaboration
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="projects section" id="projects">
+
+            <div class="section-heading reveal">
+
+                <p class="eyebrow">
+                    03 — PROJECTS
+                </p>
+
+                <h2>
+                    Things I've
+                    <span>built.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="project-list">
+
+
+                <!-- PROJECT 1 -->
+
+                <article class="project reveal">
+
+                    <div class="project-meta">
+
+                        <span>01</span>
+
+                        <span>
+                            Python • Machine Learning
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Student Dropout Predictor
+                        </h3>
+
+                        <p>
+
+                            A Machine Learning application designed to
                         identify students who may be at risk of dropping
                         out based on academic and demographic factors.
-                    </p>
 
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Machine Learning</span>
-                        <span>Flask</span>
-                    </div>
+                        </p>
 
-                    <div class="project-links">
 
-                        <a href="#" target="_blank">
-                            <i class="fab fa-github"></i>
-                            GitHub
-                        </a>
+                        <div class="tags">
 
-                        <a href="#" target="_blank">
-                            Live Demo
-                            <i class="fas fa-arrow-up-right-from-square"></i>
-                        </a>
+                            <span>Python</span>
+                            <span>ML</span>
+                            <span>Data</span>
+
+                        </div>
 
                     </div>
 
-                </div>
 
-            </div>
+                    <a href="https://github.com/Rajdip-05/Eg-ml-project"
+                        target="_blank"
+                        class="project-arrow">
+
+                        ↗
+
+                    </a>
+
+                </article>
 
 
-            <!-- PROJECT 3 -->
+                <!-- PROJECT 2 -->
 
-            <div class="project-card">
+                <article class="project reveal">
 
-                <div class="project-icon">
-                    <i class="fas fa-globe"></i>
-                </div>
+                    <div class="project-meta">
 
-                <div class="project-content">
+                        <span>02</span>
 
-                    <h3>Crop Prediction Website</h3>
-
-                    <p>
-                        A web-based application that uses Machine
-                        Learning to recommend suitable crops based
-                        on environmental and soil conditions.
-                    </p>
-
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>ML</span>
-                    </div>
-
-                    <div class="project-links">
-
-                        <a href="#" target="_blank">
-                            <i class="fab fa-github"></i>
-                            GitHub
-                        </a>
-
-                        <a href="#" target="_blank">
-                            Live Demo
-                            <i class="fas fa-arrow-up-right-from-square"></i>
-                        </a>
+                        <span>
+                            Coming Soon
+                        </span>
 
                     </div>
 
-                </div>
+
+                    <div>
+
+                        <h3>
+                            New Project in Progress
+                        </h3>
+
+                        <p>
+
+                            Currently working on a fresh
+                            portfolio-worthy project.
+                            More details will be added soon.
+
+                        </p>
+
+
+                        <div class="tags">
+
+                            <span>Building</span>
+                            <span>Learning</span>
+                            <span>2026</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <a href="#contact"
+                        class="project-arrow">
+
+                        ↗
+
+                    </a>
+
+                </article>
 
             </div>
 
-        </div>
-
-    </section>
+        </section>
 
 
-    <!-- ================= EDUCATION ================= -->
+        <!-- ================= EDUCATION ================= -->
 
-    <section class="section education-section" id="education">
+        <section class="education section" id="education">
 
-        <div class="section-title">
-            <p>MY JOURNEY</p>
-            <h2>Education <span>& Learning</span></h2>
-        </div>
+            <div class="section-heading reveal">
 
-        <div class="timeline">
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span>2026 – Present</span>
-
-                    <h3>BTech in Computer Science & Engineering</h3>
-
-                    <p>
-                        Currently pursuing BTech CSE through lateral entry.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span>Diploma</span>
-
-                    <h3>Diploma in Engineering</h3>
-
-                    <p>
-                        Completed Diploma in Engineering and developed
-                        an interest in Computer Science and programming.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="timeline-item">
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span>Currently Learning</span>
-
-                    <h3>Data Science & DSA</h3>
-
-                    <p>
-                        Improving Python, Data Structures & Algorithms,
-                        SQL, Machine Learning and problem solving.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= CONTACT ================= -->
-
-    <section class="section contact-section" id="contact">
-
-        <div class="section-title">
-
-            <p>LET'S CONNECT</p>
-
-            <h2>Contact <span>Me</span></h2>
-
-        </div>
-
-        <div class="contact-container">
-
-            <div class="contact-info">
-
-                <h3>Let's build something together.</h3>
-
-                <p>
-                    I'm always interested in learning new technologies,
-                    building projects and connecting with other developers.
+                <p class="eyebrow">
+                    04 — EDUCATION
                 </p>
 
-                <div class="contact-item">
+                <h2>
+                    My learning
+                    <span>journey.</span>
+                </h2>
 
-                    <i class="fas fa-envelope"></i>
+            </div>
+
+
+            <div class="timeline reveal">
+
+
+                <div class="timeline-item">
+
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-year">
+                        CURRENT
+                    </div>
 
                     <div>
-                        <span>Email</span>
-                        <p>your-email@gmail.com</p>
+
+                        <h3>
+                            B.Tech — Computer Science
+                            & Engineering
+                        </h3>
+
+                        <p>
+                            LOVELY PROFESSIONAL UNIVERSITY
+                        </p>
+
+                        <small>
+
+                            Building stronger foundations in
+                            software, DSA, networks, databases
+                            and modern technologies.
+
+                        </small>
+
                     </div>
 
                 </div>
 
-                <div class="contact-item">
 
-                    <i class="fab fa-github"></i>
+                <div class="timeline-item">
 
-                    <div>
-                        <span>GitHub</span>
-                        <p>github.com/yourusername</p>
+                    <div class="timeline-dot"></div>
+
+                    <div class="timeline-year">
+                        2023–2026
                     </div>
 
-                </div>
-
-                <div class="contact-item">
-
-                    <i class="fab fa-linkedin"></i>
-
                     <div>
-                        <span>LinkedIn</span>
-                        <p>linkedin.com/in/yourusername</p>
+
+                        <h3>
+                            Diploma in Computer Science /
+                            Engineering
+                        </h3>
+
+                        <p>
+                            JIS School of Polytechnic
+                        </p>
+
+                        <small>
+
+                            Developed the fundamentals that
+                            started my journey into programming
+                            and technology.
+
+                        </small>
+
                     </div>
 
                 </div>
 
             </div>
 
+        </section>
 
-            <form class="contact-form" id="contactForm">
 
-                <input type="text"
-                       placeholder="Your Name"
-                       required>
+        <!-- ================= CONTACT ================= -->
 
-                <input type="email"
-                       placeholder="Your Email"
-                       required>
+<section class="contact section" id="contact">
 
-                <input type="text"
-                       placeholder="Subject"
-                       required>
+    <div class="section-heading reveal">
 
-                <textarea rows="6"
-                          placeholder="Your Message"
-                          required></textarea>
+        <p class="eyebrow">
+            05 — CONTACT
+        </p>
 
-                <button type="submit" class="btn primary-btn">
-                    Send Message
-                    <i class="fas fa-paper-plane"></i>
-                </button>
+        <h2>
+            Let's
+            <span>connect.</span>
+        </h2>
 
-            </form>
+    </div>
+
+
+    <div class="contact-grid">
+
+
+        <!-- Contact Information -->
+
+        <div class="contact-info reveal">
+
+            <p class="contact-intro">
+                Have a project idea, collaboration,
+                internship opportunity, or simply
+                want to connect? Feel free to reach out.
+            </p>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ✉ 
+                </div>
+
+                <div>
+                    <small>EMAIL</small>
+
+                    <a href="mailto:rajdipsannyasi123@gmail.com">
+                        rajdipsannyasi123@gmail.com
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ☎
+                </div>
+
+                <div>
+                    <small>PHONE</small>
+
+                    <a href="tel:+91 7872718204">
+                        +91 7872718204
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    ◉
+                </div>
+
+                <div>
+                    <small>LOCATION</small>
+
+                    <p>
+                        Kolkata, West Bengal, India
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-socials">
+
+                <a href="https://github.com/Rajdip-05"
+                   target="_blank">
+                    GitHub ↗
+                </a>
+
+                <a href="https://www.linkedin.com/"
+                   target="_blank">
+                    LinkedIn ↗
+                </a>
+
+            </div>
 
         </div>
 
-    </section>
 
+        <!-- Contact Card -->
+
+        <div class="contact-card reveal">
+
+            <p class="card-label">
+                HAVE AN IDEA?
+            </p>
+
+            <h3>
+                Let's build
+                something
+                <span>great.</span>
+            </h3>
+
+            <p>
+                I'm always interested in learning,
+                building new projects and meeting
+                people who love technology.
+            </p>
+
+            <a href="mailto:rajdipsannyasi123@gmail.com"
+               class="btn primary big">
+
+                Send Me A Message
+
+                <span>↗</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
 
     <!-- ================= FOOTER ================= -->
 
     <footer>
 
-        <div class="footer-content">
+        <span>
+            © 2026 Rajdip Sannyasi
+        </span>
 
-            <h2>Rajdip<span>.</span></h2>
-
-            <p>
-                Building skills. Building projects. Building the future.
-            </p>
-
-            <div class="social-icons">
-
-                <a href="https://github.com/" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-
-                <a href="https://linkedin.com/" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-                <a href="mailto:your-email@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
-
-            </div>
-
-            <p class="copyright">
-                © 2026 Rajdip Sannyasi. All Rights Reserved.
-            </p>
-
-        </div>
+        <span>
+            Designed & built with curiosity.
+        </span>
 
     </footer>
 
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
 
 </body>
+
 </html>
-```

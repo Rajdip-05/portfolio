@@ -1,33 +1,105 @@
-javascript
-// ===============================
-// MOBILE MENU
-// ===============================
+/* =====================================
+   MOBILE MENU
+===================================== */
 
 const menuBtn = document.getElementById("menuBtn");
-const navLinks = document.getElementById("navLinks");
+const nav = document.getElementById("nav");
 
 menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+
+    nav.classList.toggle("open");
+
 });
 
 
-// Close mobile menu after clicking a link
+/* Close mobile menu after clicking */
 
-document.querySelectorAll(".nav-links a").forEach(link => {
+document.querySelectorAll("nav a").forEach(link => {
 
     link.addEventListener("click", () => {
 
-        navLinks.classList.remove("active");
+        nav.classList.remove("open");
 
     });
 
 });
 
 
-// ===============================
-// CONTACT FORM
-// ===============================
+/* =====================================
+   SCROLL REVEAL ANIMATION
+===================================== */
 
+const observer = new IntersectionObserver(
+
+    (entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("visible");
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold: 0.12
+    }
+
+);
+
+
+document.querySelectorAll(".reveal").forEach(element => {
+
+    observer.observe(element);
+
+});
+
+
+/* =====================================
+   ACTIVE NAVIGATION
+===================================== */
+
+const sections =
+    document.querySelectorAll("section[id]");
+
+const navLinks =
+    document.querySelectorAll("nav a");
+
+
+window.addEventListener("scroll", () => {
+
+    let current = "home";
+
+
+    sections.forEach(section => {
+
+        if (
+            window.scrollY >=
+            section.offsetTop - 180
+        ) {
+
+            current = section.id;
+
+        }
+
+    });
+
+
+    navLinks.forEach(link => {
+
+        link.classList.toggle(
+            "active",
+            link.getAttribute("href") ===
+            `#${current}`
+        );
+
+    });
+
+});
 const contactForm = document.getElementById("contactForm");
 
 contactForm.addEventListener("submit", function(event) {
@@ -40,24 +112,20 @@ contactForm.addEventListener("submit", function(event) {
 
 });
 
+/* =====================================
+   CURSOR GLOW
+===================================== */
 
-// ===============================
-// NAVBAR SCROLL EFFECT
-// ===============================
+const glow =
+    document.querySelector(".cursor-glow");
 
-window.addEventListener("scroll", () => {
 
-    const header = document.querySelector("header");
+window.addEventListener("mousemove", (event) => {
 
-    if (window.scrollY > 50) {
+    glow.style.left =
+        `${event.clientX}px`;
 
-        header.style.background = "rgba(8, 8, 12, 0.95)";
-
-    } else {
-
-        header.style.background = "rgba(10, 10, 15, 0.85)";
-
-    }
+    glow.style.top =
+        `${event.clientY}px`;
 
 });
-
